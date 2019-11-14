@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+ 
+<!--
+1. two-column layout using grid or flexbox
+2. footer and header font color blue and the font color for content and menu should be maroon.
+3.background color of the footer and header should be some light color
+4.width of the menu is 200px and the min-width of the whole design is 860px 4.1 Shrink my desktop browser, the menu will stay with 200px. 4.2 The content will adjust until the whole layout reaches the minimum of 860px
+5.The background color and the font color will be set using CSS variables
+6.at least 3 items and should be built using unordered list (bullet list) - no bullets should be shown
+7.footer content should have just the copyright information with the copyright symbol presented
+8.header should have the name of the company centralized and in heading 1 format
+9.content should have one heading (2 or 3) and then 2 paragraphs that you can write anything
+-->
+<html lang="eng">
+<head>
+<title>Short Task</title>  
+<meta charset="utf-8">
+<meta name="flexbox" content="two column layout">
+<style>
+    :root{--color: lightblue;
+    --color2: lightgray;
+    --color3: maroon;
+    --color4:blue;
+    --color5:lightpink}
+#wrapper { margin:0 auto; border: 1px solid black; display: flex; width:80%; min-width: 860px; flex-wrap: wrap; }
+header { color:var(--color4); background-color: var(--color); width:100%;}
+a:link{text-decoration: none; color: var(--color3)
+    }   
+a:visited{
+        color: var(--color3)
+    }
+ul{
+        list-style-type: none;
+    }
+nav { background-color: var(--color5);  flex-shrink: 0;  flex-basis: 200px;}
+footer{ color:var(--color4); background-color: var(--color2); width:100%;}
+
+main { flex-grow: 1; color: var(--color3)}
+</style>
+    </head>
+<body>
+<div id="wrapper">
+    <header>
+    <h1>Two-column layout using flexbox</h1>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.facebook.com">Facebook</a></li>
+        <li><a href="http://www.youtube.com">Youtube</a></li>
+        </ul>
+    </nav>
+    <main>
+    <section>
+        <h2>A section in a document, explaining what WWF is</h2>
+        <p>A paragraph is marked up as follows:</p>
+        <p>This is some text in a paragraph.</p>
+        <p>Browsers automatically add some space (margin) before and after each p element.</p>
+        <p>The margins can be modified with CSS (with the margin properties).</p>
+        </section>
+    </main>
+<footer>copyright&copy;&nbsp;2019 HTML&amp;CSS CNIT 132 </footer>
+    </div>    
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
