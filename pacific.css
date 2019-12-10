@@ -1,0 +1,52 @@
+
+body{background-color: white; color: darkgray;background-image: url('background.jpg');}
+#wrapper { margin:0 auto; width: 80%; display: grid; grid-template-areas: 'header header' 'nav content'; min-width: 960px; box-shadow:5px 5px 5px black;grid-template-columns: 155px auto;  }
+header {background-color: #000033; color: white; background-image: url(sunset.jpg); background-position: right;background-repeat: no-repeat; font-family:font-family: Georgia, "Times New Roman", serif; grid-area: header;}
+h2{font-family:font-family: Georgia, "Times New Roman", serif;;color: #3399CC; text-shadow: 5px 5px 5px black;}
+#nav { background-color: skyblue; grid-area: nav;list-style-type: none; padding: 0px 25px 0px 0px; }
+#content { background-color: white; grid-area: content;}
+#nav a {margin: 0;padding-left: 0;color: #000033; text-decoration: none; display: block; width: 100%; font-size: 1.2em;}
+#nav a:visited{color: #344873;}
+#nav a:hover{color: white;}
+.mainwords{color: #000033; font-weight: bold;}
+#contact{font-size: 90%; }
+#footer{font-size: 75%;font-style: italic;}
+#content img{float: left;height: 200px;padding-right: 10px}
+#content ul{padding-left: 285px;}
+h3{color: #000033; font-family:font-family: Georgia, "Times New Roman", serif;}
+dt{color: #000033; font-family:font-family: Georgia, "Times New Roman", serif;}
+.moveImage{
+    width: 80px;
+    height: 80px;
+    background-image: url(little-bird.gif);
+    background-repeat: no-repeat;
+    left: 780px;
+    position: relative;
+    -webkit-animation: move 8s;
+    animation: move 8s;
+}
+@-webkit-keyframes move{
+    from {left: 0;}
+    to{left:780px;}
+}
+/*Standard syntax*/
+@keyframes move{
+    from {left: 0;}
+    to{left:780px;}
+}
+@media only screen and (max-width:480px){
+    body{}
+    #wrapper{ margin:0 auto; width: 80%; display: grid; grid-template-areas: 'header' 'nav' 'content';
+        
+    }
+    header{background-image: none;}
+    #content img{
+        display: none;
+    }
+    #content{margin: auto}
+    #content ul{padding-left: 0px;}
+    
+}
+
+
+
