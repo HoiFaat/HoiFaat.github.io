@@ -1,0 +1,54 @@
+body{
+    background-image: linear-gradient(skyblue, white);
+    margin: auto;
+    background-color:firebrick;
+
+    
+    
+}
+#wrapper{
+    display: grid; grid-template-areas: 'header header' 'content information' 'h3 h3' 'detail detail';
+    grid-gap: 10px; margin: auto; width: 80%;min-width: 550px;
+}
+
+#content{
+    color:darkblue;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    grid-area: header;
+}
+h3{
+    grid-area: h3;
+    color: dodgerblue;
+}
+#information{
+    grid-area: information;
+    padding: 20px
+}
+#detail{
+    grid-area: detail;
+}
+#information h4{
+    font-size:1.5em;
+    color:darkblue;
+    text-transform: uppercase;
+    
+}
+#detail h5{
+    font-size:1em;
+    color: darkblue;
+}
+#information p{
+
+    font-size:1.2em;
+    color:white;
+}
+
+
+#detail a:hover{
+    color: white;
+}
