@@ -36,7 +36,7 @@ dt{color: #000033; font-family:font-family: Georgia, "Times New Roman", serif;}
 }
 @media only screen and (max-width:480px){
     body{}
-    #wrapper{ margin:0 auto; width: 80%; display: grid; grid-template-areas: 'header' 'nav' 'content';
+    #wrapper{ display: block;
         
     }
     header{background-image: none;}
@@ -45,8 +45,9 @@ dt{color: #000033; font-family:font-family: Georgia, "Times New Roman", serif;}
     }
     #content{margin: auto}
     #content ul{padding-left: 0px;}
-    
+
 }
+
 
 
 
